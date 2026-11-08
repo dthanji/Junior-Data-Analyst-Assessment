@@ -78,9 +78,10 @@ Assumption: a repeat buyer has at least two distinct completed orders. The denom
 
     WITH customer_orders AS (
         SELECT customer_id, COUNT(DISTINCT order_id) AS completed_orders
-        FROM orders
-        WHERE status = 'completed'
-        GROUP BY customer_id
+        FROM orders o
+        JOIN customers c ON c.customer_id = o.customer_id
+        WHERE o.status = 'completed'
+        GROUP BY o.customer_id
     )
     SELECT COUNT(*) AS repeat_buyers,
            (SELECT COUNT(*) FROM customers) AS total_customers,
