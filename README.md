@@ -2,22 +2,22 @@
 
 **Candidate:** Dennis Thanji  
 **Project:** Tunda Box Junior Data Analyst Assessment  
-**Status:** Preparation portfolio / worked assessment responses
+**Status:** Assessment response portfolio
 
 ## Repository contents
 
 - [Assessment responses](assessment-responses.md) — consolidated written responses for Parts 1–5.
-- [Solution notebook](tunda_box_assessment_solutions.ipynb) — reproducible Python calculations, SQL examples, data-quality checks and statistical analysis.
+- [Solution notebook](tunda_box_assessment_solutions.ipynb) — reproducible Python calculations, PostgreSQL query examples, data-quality checks, statistical analysis and validation assertions.
 - [Thought process](THOUGHT-PROCESS.md) — assumptions, analytical approach, validation decisions and limitations.
 - [Drive copy](#google-drive-copy) — link to the complete assessment document.
 
 ## Google Drive copy
 
-The complete assessment document is available at the Google Drive link below. Make sure the document's sharing permissions allow the intended reviewers to open it.
+The accompanying assessment document is linked below. Before submitting, test the link in a signed-out or incognito browser to confirm that the intended reviewers can open it.
 
 [Open the complete assessment document in Google Drive](https://drive.google.com/file/d/1kHiROtrTVHS1h-ghcksZ21F2z5KPcErG/view?usp=sharing)
 
-The Drive document is the accompanying copy of the assessment submission. The repository also contains the written responses and analytical thought process for convenient review.
+The repository contains the written responses and thought process as accessible Markdown files. Check that the Drive copy contains the same final responses and is not an outdated draft.
 
 ## How to review
 
@@ -37,17 +37,26 @@ The Drive document is the accompanying copy of the assessment submission. The re
 
 ## Reproducibility
 
-The notebook uses Python with pandas, numpy and statsmodels. Install dependencies with:
+The notebook uses Python with pandas, NumPy and statsmodels. From the repository folder, install the pinned minimum dependencies with:
 
 ```bash
-python -m pip install pandas numpy statsmodels jupyter
+python -m pip install -r requirements.txt
 ```
 
-Launch it with:
+Launch Jupyter with:
 
 ```bash
 jupyter notebook
 ```
+
+Open `tunda_box_assessment_solutions.ipynb` and choose **Kernel → Restart & Run All**. The final notebook cell runs assertions against the key expected results.
+
+## Final submission checklist
+
+- [ ] Confirm the Google Drive link opens for a reviewer who is not signed in to your account.
+- [ ] Confirm the Drive document matches `assessment-responses.md` and `THOUGHT-PROCESS.md`.
+- [ ] Run every notebook cell from top to bottom and confirm the final validation message appears.
+- [ ] Submit this public repository URL together with the Drive link if the assessment instructions request both.
 
 ---
 Prepared as a junior data analyst assessment portfolio.
