@@ -13,11 +13,11 @@
 
 ## Google Drive copy
 
-**TODO:** Upload the complete assessment document to Google Drive, set access so the intended reviewers can open it, then replace the placeholder below with its share link.
+The complete assessment document is available at the Google Drive link below. Make sure the document's sharing permissions allow the intended reviewers to open it.
 
 [Open the complete assessment document in Google Drive](https://drive.google.com/file/d/1kHiROtrTVHS1h-ghcksZ21F2z5KPcErG/view?usp=sharing)
 
-The Drive copy should include all assessment responses in `assessment-responses.md`, together with the thought-process explanation. Do not submit this placeholder link.
+The Drive document is the accompanying copy of the assessment submission. The repository also contains the written responses and analytical thought process for convenient review.
 
 ## How to review
 
