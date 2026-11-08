@@ -37,10 +37,10 @@ The Drive copy should include all assessment responses in `assessment-responses.
 
 ## Reproducibility
 
-The notebook uses Python with pandas, numpy and scipy. Install dependencies with:
+The notebook uses Python with pandas, numpy and statsmodels. Install dependencies with:
 
 ```bash
-python -m pip install pandas numpy scipy jupyter
+python -m pip install pandas numpy statsmodels jupyter
 ```
 
 Launch it with:
