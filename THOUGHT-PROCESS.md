@@ -13,7 +13,7 @@ This prevents technically correct calculations from answering the wrong business
 
 ## 2. Inspect before calculating
 
-For the Tunda Box case, I inspect identifiers, missing values, duplicates, date relationships, categorical consistency and unusual numeric values before trusting summary statistics.
+For the Tunda Box case, I inspect identifiers, missing values, duplicate order IDs as well as exact duplicate rows, date relationships, categorical consistency and unusual numeric values before trusting summary statistics.
 
 I distinguish between:
 - A confirmed issue, such as the exact duplicate row for order 1006.
